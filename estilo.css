@@ -1,0 +1,58 @@
+*{
+    margin: 0; /*es una de las propiedades fundamentales para dar forma y estructura a tus diseños web*/
+    padding: 0; /*crea el espacio o área alrededor del contenido de un elemento*/
+    box-sizing: border-box; /*establece como se calcula el ancho y alto total de un elemento*/
+    --color1: #07B0F2;
+    --color2: #05C7F2;
+    --color3: #F2C029;
+    --color4: #F2AE2E;
+    --color5: #F2F2F2;
+}
+
+main{
+    width: 800px; /*establece el ancho de un elemento*/
+
+    margin:20px auto;
+}
+#cabecera{
+    display: flex; /*es la responsable de controlar cómo se ven esas cajas y de cómo interactúan entre ellas, pudiendo cambiar su apariencia modificando el valor.*/
+    flex-direction: row; /*especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección*/
+    justify-content: space-between; /*controla la alineación de todos los elementos en el eje principal*/
+    align-items: center; /*controla la alineación de todos los elementos en el eje transversal*/
+    background-color: var(--color1); /*es un propiedad de CSS que define el color de fondo de un elemento*/
+    padding:10px;
+    margin:5px;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 5px;
+}
+#menu div{
+    padding: 10px;
+}
+#contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+.contenido{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid var(--color3); /*permite definir en una única regla todos los bordes de los elementos seleccionados*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* permite al autor especificar el tipo de fuente para un elemento*/
+}
+h3{
+    text-align: center; /*establece la alineación horizontal del contenido a nivel de línea dentro de un elemento de bloque o caja de celda-tabla*/
+    color: var(--color4);
+    background-color: var(--color5);
+}
+#pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--color1);
+}
+
